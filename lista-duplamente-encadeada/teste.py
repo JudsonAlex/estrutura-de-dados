@@ -56,8 +56,14 @@ class ListaDuplamenteEncadeada:
             
 
 
-    def atualizar(self):
-        pass
+    def atualizar_estoque(self, codigo, valor):
+        atual = self.head
+        while atual:
+            if atual.codigo == codigo:
+                atual.quantidade = valor
+                return
+            atual = atual.prox
+            
 
     def listar(self):
         status = True
