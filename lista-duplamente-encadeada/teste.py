@@ -25,8 +25,36 @@ class ListaDuplamenteEncadeada:
             produto.anterior = self.tail
             self.tail.prox = produto
 
-    def remover(self):
-        pass
+    
+    def remover(self, codigo):
+        atual = self.head
+        while atual:
+            if atual.codigo == codigo:
+                if atual.anterior is None and atual.prox is None:
+                    self.head = None
+                    self.tail = None
+                elif atual.anterior is None:
+                    self.head = atual.prox
+                    self.head.anterior = None
+
+                elif atual.prox is None:
+                    self.tail = atual.anterior
+                    self.tail.prox = None
+
+                else:
+                    atual.anterior.prox = atual.prox
+                    atual.prox.anterior = atual.anterior
+
+                print(f"{atual.nome} - [Removido]")
+                atual.anterior = None
+                atual.prox = None
+                return
+            else:
+                atual = atual.prox
+
+
+            
+
 
     def atualizar(self):
         pass
