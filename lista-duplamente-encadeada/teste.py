@@ -69,7 +69,7 @@ class ListaDuplamenteEncadeada:
         status = True
         atual = self.head
         print('='*55)
-        print(f'{'Código':^7}{'Nome':^25}{'Preço':^14}{'estoque':^8}')
+        print(f"{'Código':^7}{'Nome':^25}{'Preço':^14}{'estoque':^8}")
         print('='*55)
 
         while status:
