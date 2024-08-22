@@ -1,6 +1,6 @@
 from teste import Produto, ListaDuplamenteEncadeada
 
-produto = Produto('Nub', '123', 15, 12)
+produto = Produto('Calça', '123', 15, 12)
 produto2 = Produto('furadeira eletrica 220w sigma poewr', '321', 45, 85)
 lista = ListaDuplamenteEncadeada()
 lista.adicionar(produto)
