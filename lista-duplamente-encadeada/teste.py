@@ -68,15 +68,15 @@ class ListaDuplamenteEncadeada:
     def listar(self):
         status = True
         atual = self.head
-        print('-'*50)
-        print('Código          Nome          Preço     estoque   ')
-        print('-'*50)
+        print('='*55)
+        print(f'{'Código':^7}{'Nome':^25}{'Preço':^14}{'estoque':^8}')
+        print('='*55)
 
         while status:
-            print(f'{atual.codigo:^6}{atual.nome[:24]:<24}{atual.preco:^6}{atual.quantidade:^14}')
+            print(f'{atual.codigo:^6}|{atual.nome[:24]:<24}|{atual.preco:^14}|{atual.quantidade:^6}|')
             # print(atual.nome)
             if atual.prox:
                 atual = atual.prox
             else:
                 status = False
-        print('='*50)
+        print('-'*55,'\n\n')
