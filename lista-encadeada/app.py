@@ -1,14 +1,11 @@
-class Paciente:
-    def __init__(self, nome,id, estado) -> None:
-        self.nome = nome
-        self.id = id
-        self.estado = estado
+from listaEncadeada import ListaDePacientes, Paciente
 
-class ListaDePacientes:
-    def __init__(self) -> None:
-        self.head = None
-        self.tail = None
+judson = Paciente('Judson', 1, "Saldável")
+david = Paciente('David', 2, "Nubando")
 
-    def adicionar(self, paciente):
-        pass
-        
+lista = ListaDePacientes()
+
+lista.adicionar(judson)
+lista.adicionar(david)
+lista.listar()
+
