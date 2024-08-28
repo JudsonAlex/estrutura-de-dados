@@ -10,7 +10,7 @@ livros = [
     Livro('Moby Dick', 635),
     Livro('Orgulho e Preconceito', 432),
     Livro('Cem Anos de Solidão', 417),
-    Livro('Guerra e Paz', 1225)
+    
 ]
 pilha = PilhaDeLivros()
 
