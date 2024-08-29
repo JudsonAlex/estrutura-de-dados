@@ -25,6 +25,7 @@ class ArvoreBinaria:
 
     def  percorrer_em_ordem(self):
         self._percorrer_em_ordem(self.root)
+        print('\n')
 
     def _percorrer_em_ordem(self, no: No):
         if no is not None:
@@ -34,6 +35,7 @@ class ArvoreBinaria:
 
     def  percorrer_pre_ordem(self):
         self._percorrer_pre_ordem(self.root)
+        print('\n')
 
     def _percorrer_pre_ordem(self, no: No):
         if no is not None:
@@ -43,10 +45,12 @@ class ArvoreBinaria:
 
     def  percorrer_pos_ordem(self):
         self._percorrer_pos_ordem(self.root)
+        print("\n")
 
     def _percorrer_pos_ordem(self, no:No):
         if no is not None:
             self._percorrer_pos_ordem(no.esquerda)
             self._percorrer_pos_ordem(no.direita)
             print(no.valor, end=" ")
+        
 

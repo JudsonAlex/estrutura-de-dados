@@ -9,4 +9,6 @@ print(valores)
 for i in valores:
     arvore.inserir(i)
 
+arvore.percorrer_pre_ordem()
+arvore.percorrer_em_ordem()
 arvore.percorrer_pos_ordem()
